@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.about-us {
+    padding: 100px 60px;
+    background-image: url('../images/proj.png');
+    background-repeat: no-repeat;
+    background-size: 380px;
+    background-position: right bottom;
+}
+
+@media only screen and (max-width:1199px) {
+    .about-us {
+        background-image: none;
+    }
+}
+
+.about-sec-header>img {
+    width: 100%;
+}
+
+.about-sec-2 {
+    margin-top: 30px !important;
+}
+
+.about-sec-data-2 {
+    font-size: 25px;
+    font-weight: 800;
+    color: var(--text-black);
+    font-family: var(--font-family);
+}
+
+.about-sec-data-2-para {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--para-color);
+    font-family: var(--font-family);
+    line-height: 30px;
+    margin-top: 10px;
+}

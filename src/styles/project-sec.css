@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.Project-div {
+    padding: 40px 75px 0px 75px;
+    background-image: url('../images/proj.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+@media only screen and (max-width:1199px) {
+    .Project-div {
+        background-image: none;
+    }
+}
+
+.project-img img {
+    width: 100%;
+}
+
+.project-data h1 {
+    font-size: 44px;
+    font-family: var(--font-family);
+    font-weight: 800;
+}
+
+.project-data p {
+    font-size: 17px;
+    font-weight: 600px;
+    line-height: 30px;
+    color: var(--para-color);
+    margin-top: 20px;
+    font-family: var(--font-family);
+}
+
+.project-data button {
+    margin-top: 33px;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-weight: 700;
+    padding: 13px 25px;
+    color: white;
+    background: linear-gradient(to right, var(--pink-color), var(--blue-color));
+    border-radius: 5px;
+    font-family: var(--font-family);
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.project-data button:hover {
+    transform: translateY(-3px);
+}
+
+.circle-shape1 img {
+    position: relative;
+    bottom: 250px;
+    right: -300px;
+    z-index: -1;
+}
+@media only screen and (max-width:960px) {
+    .circle-shape1 img {
+        display: none;
+    }
+}

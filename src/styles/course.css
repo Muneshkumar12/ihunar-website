@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.course-data {
+    padding: 100px 60px;
+}
+
+.course-data-detail>img {
+    width: 100%;
+}
+
+.course-data-detail>h1 {
+    font-size: 28px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--text-black);
+    margin-top: 10px;
+}
+
+.course-data-detail>p,
+.course-list>li {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--para-color);
+    line-height: 30px;
+    margin-top: 5px;
+}
+
+.course-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding-left: 25px;
+}
+
+.course-list li {
+    position: relative;
+}
+
+.course-list li::before {
+    content: '';
+    width: 7px;
+    height: 7px;
+    background-color: var(--pink-color);
+    border-radius: 50%;
+    position: absolute;
+    left: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.course-list-contact {
+    padding: 30px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+    margin: 10px;
+}
+
+.course-list-contact>h1 {
+    font-size: 28px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.course-contact-inner {
+    padding: 20px 0px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.course-contact-inner>i {
+    font-size: 25px;
+    color: var(--pink-color);
+    margin-right: 10px;
+}
+
+.course-contact-inner>div>h1 {
+    font-size: 20px;
+    font-family: var(--font-family);
+    font-weight: 800;
+    color: var(--text-black);
+}
+
+.course-contact-inner>div>a,
+.course-contact-inner>div>p {
+    font-size: 17px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--para-color);
+    line-height: 30px;
+}
+.course-contact-inner>div>a:hover{
+    color: var(--pink-color);
+}
+@media only screen and (max-width:450px) {
+    .course-data {
+        padding: 100px 30px;
+    }
+}

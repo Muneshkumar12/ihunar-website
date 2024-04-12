@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact-data-1 {
+    padding: 100px 60px;
+}
+
+.contact-data-card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    height: 100%;
+}
+
+
+
+.contact-icons {
+    color: var(--pink-color);
+    height: 100%;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    background-color: #F7F7F7;
+    width: 85px;
+}
+
+
+
+.contact-data-card:hover .contact-icons {
+    color: white;
+    background: linear-gradient(to right, var(--pink-color), var(--blue-color));
+    transition: color 0.5s ease;
+}
+
+.contact-data-card>div {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.contact-data-card>div>h1 {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--text-black);
+}
+
+.contact-data-card>div>p,
+a {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--para-color);
+    line-height: 30px;
+}
+
+.contact-form-sec {
+    margin-top: 80px !important;
+}
+
+.contact-banner {
+    width: 100%;
+}
+
+.contact-form-div {
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 20px 30px;
+}
+
+.contact-form-div>form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form-div>form>input,
+textarea {
+    border: none;
+    background: none;
+    outline: none;
+    height: 55px;
+    background-color: #F5F5F5;
+    margin-top: 15px;
+    padding: 20px;
+    font-size: 17px;
+    color: var(--para-color);
+    font-weight: 600;
+    font-family: var(--font-family);
+}
+
+.contact-form-div>form>textarea {
+    height: 160px;
+}
+
+.send-message-btn {
+    border: none;
+    background: none;
+    background: linear-gradient(to right, var(--pink-color), var(--blue-color));
+    padding: 15px 0px;
+    width: 150px;
+    font-size: 17px;
+    color: white;
+    font-family: var(--font-family);
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+}
+
+.send-message-btn:hover {
+  transform: translateY(-5px);
+}
+
+
+
+@media only screen and (max-width:450px) {
+    .contact-data-1 {
+        padding: 100px 20px;
+    }
+}

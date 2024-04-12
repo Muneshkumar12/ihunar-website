@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.page-header-sec {
+    background-image: url('../images/page-title-bg.jpg');
+    background-size: auto 60rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    padding: 100px 70px;
+}
+
+.page-header-name {
+    font-size: 2.75rem ;
+    font-weight: 800;
+    font-family: var(--font-family);
+}
+
+.page-header-para>a {
+    cursor: pointer !important;
+}
+
+.page-header-para {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 30px;
+    color: var(--para-color);
+}
+
+.page-header-flower >img{
+    position: relative;
+    top: -22px;
+    right: 12px;
+}
+
+.page-header-flower>img {
+    animation: rotate 15s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.page-header-circle {
+    position: absolute;
+    right: 30px;
+    top: 150px;
+    animation: flipRotateY 3s infinite linear;
+    transform-style: preserve-3d;
+    margin: 0 auto;
+    opacity: 0.5;
+}
+
+@keyframes flipRotateY {
+
+    0%,
+    100% {
+        transform: rotateY(0deg);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+}
+.page-header-image3{
+    position: absolute;
+    top: 50px;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    animation: moveUpDown 4s infinite linear; 
+    opacity: 0.2;
+  }
+  
+  @keyframes moveUpDown {
+    0% {
+      transform: translateY(0); 
+    }
+    50% {
+      transform: translateY(-10px); 
+    }
+    100% {
+      transform: translateY(0); 
+    }
+  }

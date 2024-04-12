@@ -1,0 +1,97 @@
+
+.working-process {
+    padding: 45px 40px !important;
+}
+
+.item-div {
+    display: flex;
+    padding: 20px;
+}
+
+
+.item-div {
+    /* Add styling to the container element */
+    display: flex;
+    /* Make the container a flexbox */
+    border: 1px solid red;
+    height: 150px;
+    /* word-wrap: break-word; */
+}
+
+/* .item-div span {
+    background-color: #FFFFFF;
+    box-shadow: #e3e7f2 0px 0px 0px 8px;
+    height: 65px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--pink-color);
+    margin-right: 10px; /* Add margin for spacing between spans */
+/* position: relative;
+  } */
+.item-div span,p:nth-child(1) {
+    background-color: #FFFFFF;
+    box-shadow: #e3e7f2 0px 0px 0px 8px;
+    height: 65px;
+    width: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 800;
+    color: var(--pink-color);
+    position: relative;
+}
+
+
+
+.item-div span::before {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    background-color: var(--pink-color);
+    left: 50%;
+    top: 70px;
+    z-index: -2;
+}
+
+.item-div span::after {
+    content: "";
+    position: absolute;
+    height: 100px;
+    width: 1px;
+    left: 50%;
+    top: 70px;
+    z-index: -2;
+    color: var(--pink-color); /* Adjust color if needed */
+}
+
+.item-div div {
+    margin-left: 30px;
+    width: 100%;
+}
+
+.item-div div h1 {
+    font-size: 24px;
+    font-weight: 800;
+    font-family: var(--font-family);
+
+}
+
+.item-div div p {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--para-color);
+    line-height: 30px;
+    font-family: var(--font-family);
+}

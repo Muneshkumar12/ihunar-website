@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-family: "Nunito", sans-serif;
+    --pink-color: #971D9A;
+    --blue-color: #333790;
+    --bg-color: #D1BEDA;
+    --text-black: #212529;
+    --para-color: #6B6B84;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.our-team {
+    padding: 90px 60px;
+}
+@media only screen and (max-width:450px) {
+    .our-team {
+        padding: 90px 20px;
+    }
+}
+
+.team-card {
+    border: 1px solid #F5F3F2;
+    display: flex;
+    flex-direction: column;
+    align-items: center !important;
+    justify-content: center !important;
+    transition: transform 0.2s ease-in-out;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+}
+
+.team-img {
+    width: 100%;
+}
+
+.team-card>h1 {
+    font-size: 25px;
+    font-weight: 800;
+    font-family: var(--font-family);
+    color: var(--text-black);
+    margin: 10px 0px ;
+    text-align: center;
+}
+
+.team-card>p {
+    font-size: 16px;
+    font-weight: 600;
+    font-family: var(--font-family);
+    color: var(--para-color);
+    margin: 10px 0px;
+    text-align: center;
+}
+
+.team-card> a > i {
+    font-size: 15px;
+    font-weight: 600;
+    margin: 10px 0px;
+    border: 1px solid #F5F3F2;
+    padding: 9px;
+    border-radius: 50%;
+    color: var(--para-color);
+    cursor: pointer;
+    margin: 10px 0px;
+}
+
+.team-card>a > i:hover {
+    color: white;
+    background: linear-gradient(to right, var(--pink-color), var(--blue-color));
+}
